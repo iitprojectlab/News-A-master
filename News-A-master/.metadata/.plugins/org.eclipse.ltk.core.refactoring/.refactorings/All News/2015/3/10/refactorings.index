@@ -1,0 +1,13 @@
+1425194368163	Encapsulate field 'Heading'
+1425194389132	Encapsulate field 'Url'
+1425195127028	Extract method 'connectToTheWebpage'
+1425199862144	Extract method 'newspaperTest'
+1425200923208	Extract local variable 'elementUrl'
+1425201046892	Rename local variable 'elementUrl'
+1425201233924	Rename local variable 'elementAbsoluteUrl'
+1425204814446	Delete element
+1425279431185	Rename type 'INewspaper'
+1425279571710	Change method 'connectToTheWebpage'
+1425279603584	Pull up 'connectToTheWebpage(String)' to 'Newspaper'
+1425279874110	Change method 'getHeadlines'
+1425280124404	Change method 'getNews'

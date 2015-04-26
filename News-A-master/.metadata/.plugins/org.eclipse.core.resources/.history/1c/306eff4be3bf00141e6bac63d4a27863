@@ -1,0 +1,12 @@
+package newspapers;
+
+public class Headline {
+
+	public Headline(String heading, String url) {
+		Heading = heading;
+		Url = url;
+	}
+
+	public String Heading;
+	public String Url;
+}

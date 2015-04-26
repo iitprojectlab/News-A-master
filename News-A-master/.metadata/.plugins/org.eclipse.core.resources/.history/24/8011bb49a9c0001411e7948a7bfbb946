@@ -1,0 +1,89 @@
+package newspapers;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.text.html.parser.Element;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+public class TheDailyStar implements INewspaper {
+
+	private Document connectToTheWebpage(String baseUrl) {
+		Document document = null;
+		try {
+			document = Jsoup.connect(baseUrl).timeout(10 * 1000).get();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return document;
+	}
+
+	private List<Headline> getHeadlines(String baseUrl) {
+		List<Headline> headlines = new ArrayList<Headline>();
+
+		Document document = connectToTheWebpage(baseUrl);
+
+		Elements elements = document.select("body a");
+
+		for (org.jsoup.nodes.Element element : elements) {
+			if (element.attr("href").startsWith(baseUrl + "/")) {
+				Headline headline = new Headline(element.text(),
+						element.attr("href"));
+				headlines.add(headline);
+			}
+		}
+		return headlines;
+	}
+
+	private String getNews(Headline headline) {
+		Document document = connectToTheWebpage(headline.getUrl());
+		return document.getElementById("content").text().toString();
+	}
+
+	@Override
+	public List<Headline> getAllSportsHeadLines() {
+
+		return getHeadlines("http://www.thedailystar.net/sports");
+	}
+
+	@Override
+	public String getSportsNews(Headline headline) {
+
+		return getNews(headline);
+	}
+
+	@Override
+	public List<Headline> getALLPoliticalHeadlines() {
+		return getHeadlines("http://bd.thedailystar.net/country");
+	}
+
+	@Override
+	public String getPoliticalNews(Headline headline) {
+		return getNews(headline);
+	}
+
+	@Override
+	public List<Headline> getALLEntertainmentHeadlines() {
+		return getHeadlines("http://www.thedailystar.net/entertainment");
+	}
+
+	@Override
+	public String getEntertainmentNews(Headline headline) {
+		return getNews(headline);
+	}
+
+	@Override
+	public List<Headline> getALLBusinessHeadlines() {
+		return getHeadlines("http://www.thedailystar.net/business");
+	}
+
+	@Override
+	public String getBusinessNews(Headline headline) {
+		return getNews(headline);
+	}
+
+}

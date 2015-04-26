@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
+<fullyQualifiedTypeName name="newspapers.BDNews24"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
+<fullyQualifiedTypeName name="newspapers.Headline"/>
+<fullyQualifiedTypeName name="newspapers.ProthomAlo"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="newspapers.IttefaqBangla"/>
+<fullyQualifiedTypeName name="newspapers.INewspaper"/>
+<fullyQualifiedTypeName name="newspapers.BangladeshToday"/>
+</qualifiedTypeNameHistroy>

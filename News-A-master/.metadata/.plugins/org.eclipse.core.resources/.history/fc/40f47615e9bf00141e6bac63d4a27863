@@ -1,0 +1,22 @@
+package newspapers;
+
+import java.util.List;
+
+public class Main {
+  
+	public static void main(String[] args) {
+		/*INewspaper newspaper=new TheDailyStar();
+		List<Headline>headlines =newspaper.getAllSportsHeadLines();
+		//System.out.println(newspaper.getSportsNews(headlines.get(1)));
+		
+		headlines=newspaper.getALLBusinessHeadlines();
+		System.out.println(newspaper.getBusinessNews(headlines.get(0)));
+		
+		headlines=newspaper.getALLEntertainmentHeadlines();
+		System.out.println(newspaper.getEntertainmentNews(headlines.get(0)));
+		*//*
+		headlines=newspaper.getALLPoliticalHeadlines();
+		System.out.println(newspaper.getPoliticalNews(headlines.get(0)));
+	   */
+	}
+}

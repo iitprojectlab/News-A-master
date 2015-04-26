@@ -1,0 +1,5 @@
+package newspapers;
+
+public class BangladeshToday implements INewspaper{
+
+}

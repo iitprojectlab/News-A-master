@@ -1,0 +1,19 @@
+package newspapers;
+
+public class Headline {
+
+	public Headline(String heading, String url) {
+		setHeading(heading);
+		Url = url;
+	}
+
+	public String getHeading() {
+		return Heading;
+	}
+	public void setHeading(String heading) {
+		Heading = heading;
+	}
+
+	private String Heading;
+	public String Url;
+}

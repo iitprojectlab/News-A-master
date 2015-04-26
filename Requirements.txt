@@ -1,0 +1,14 @@
+1	The app will retrieve and display all headlines of the Daily Prothom Alo
+2	The app will retrieve and display all headlines of the DailyStar
+3	The app will retrieve and display all headlines of the Bangladesh Today
+4	The app will retrieve and display all headlines of the BDNews24
+5	The app will retrieve and display all headlines of the Daily Sun
+6	The app will retrieve and display all headlines of the New Age
+7	The app will fetch and all news catagorized by sports
+8	The app will fetch and show all news catagorized by politics
+9	The app will fetch and show all news catagorized by entertainment
+10	The app will fetch and show all news catagorized by business
+11	The app will show the news in details based on the given headline including author and reviews
+12	The detail news view will show image of the news in every image format with their descriptive date and time
+13	The app will take not more than 30 seconds to display a single news
+14	The app will support both Bangla and English language

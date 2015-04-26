@@ -1,0 +1,19 @@
+package newspapers;
+
+import java.util.List;
+
+public interface INewspaper {
+
+	public abstract List<Headline>getAllSportsHeadLines();
+	public abstract String getSportsNews(Headline headline);
+	
+	public abstract List<Headline>getALLPoliticalHeadlines();
+	public abstract String getPoliticalNews(Headline headline);
+	
+	public abstract List<Headline>getALLEntertainmentHeadlines();
+	public abstract String getEntertainmentNews(Headline headline);
+	
+	public abstract List<Headline>getALLBusinessHeadlines();
+	public abstract String getBusinessNews(Headline headline);
+	
+}
